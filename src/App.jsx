@@ -35,7 +35,7 @@ function App() {
 
           {/* Ícone de 3 risquinhos e "Menu" no mobile */}
           <div className="lg:hidden flex items-center space-x-2" onClick={toggleMenu}>
-            <span className="text-3xl">&#9776;</span>
+            <span className="text-5xl">&#9776;</span>
             <span>Menu</span>
           </div>
         </div>
