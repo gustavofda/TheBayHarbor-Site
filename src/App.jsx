@@ -36,7 +36,7 @@ function App() {
           {/* Ícone de "Menu" no mobile */}
           <div className="lg:hidden flex items-center space-x-2 mt-2" onClick={toggleMenu}>
             <span className="text-4xl">&#9776;</span>
-            <span>Menu</span>
+            <span className="font-semibold">Menu</span>
           </div>
         </div>
 
