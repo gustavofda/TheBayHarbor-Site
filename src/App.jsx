@@ -71,9 +71,7 @@ function App() {
             DEXTER 
           </h1>
           <p className="text-lg lg:text-xl max-w-3xl mx-auto lg:mx-0 text-gray-300 leading-relaxed">
-            Dexter Morgan (Michael C. Hall) trabalha para a polícia de Miami como especialista em padrões de dispersão de sangue,
-            mas esconde um segredo mortal: ele é um serial killer que segue um código criado por seu pai adotivo, matando apenas
-            criminosos que escaparam da justiça.
+          Dexter Morgan (Michael C. Hall) é adotado aos três anos de idade por Harry Morgan (James Remar) e Doris, depois de ter se tornado órfão. Após detectar sua tendência homicida, o pai de Dexter decide ensinar a ele um código no intuito de canalizar a raiva do filho para situações mais propícias à violência. Nesta nova lógica, Dexter deve matar apenas assassinos de pessoas inocentes com a condição de provar sua culpa. Ele inicia o desenvolvimento de diversas estratégias usando seu conhecimento e a experiência para realizar sua nova função.
           </p>
           
           {/* Texto acima do botão */}
