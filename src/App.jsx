@@ -5,6 +5,7 @@ import dexterImage from './assets/dexterImage.jpg';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -61,7 +62,6 @@ function App() {
 
       {/* Conteúdo Principal */}
       <div className="flex flex-col lg:flex-row items-center p-8 lg:p-16">
-       
         <div className="flex-shrink-0 w-full lg:w-1/3 mb-8 lg:mb-0">
           <img src={dexterImage} alt="Dexter" className="w-full h-full object-cover rounded-2xl shadow-2xl" />
         </div>
@@ -77,6 +77,40 @@ function App() {
             de pessoas inocentes com a condição de provar sua culpa. Ele inicia o desenvolvimento de diversas estratégias usando seu
             conhecimento e a experiência para realizar sua nova função.
           </p>
+          
+          {/* Texto acima do botão */}
+          <h2 className="mt-8 text-2xl font-semibold text-red-400">Assista ao primeiro episódio grátis!</h2>
+
+          {/* Vídeo aparece acima do botão */}
+          {isVideoOpen && (
+            <div className="mt-6 relative">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/j5GxlFxdcbQ?si=AL6mGPPYVnMFMD91"
+                title="Dexter Episódio 1"
+                allowFullScreen
+                className="rounded-lg shadow-lg"
+              ></iframe>
+              {/* Botão de fechar */}
+              <button
+                className="absolute -top-4 -right-4 bg-gray-800 text-white px-3 py-1 rounded-full text-sm hover:bg-gray-700 transition"
+                onClick={() => setIsVideoOpen(false)}
+              >
+                ✖
+              </button>
+            </div>
+          )}
+
+          {/* Botão para assistir */}
+          {!isVideoOpen && (
+            <button
+              className="mt-4 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition duration-300"
+              onClick={() => setIsVideoOpen(true)}
+            >
+              Assistir Episódio 1
+            </button>
+          )}
         </div>
       </div>
     </div>
