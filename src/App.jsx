@@ -79,7 +79,7 @@ function App() {
           </p>
           
           {/* Texto acima do botão */}
-          <h2 className="mt-8 text-2xl font-semibold text-red-400">Assista ao primeiro episódio grátis!</h2>
+          <h2 className="mt-8 text-2xl font-semibold text-red-500">Assista ao primeiro episódio grátis!</h2>
 
           {/* Vídeo aparece acima do botão */}
           {isVideoOpen && (
