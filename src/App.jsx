@@ -17,7 +17,8 @@ function App() {
       {/* Menu */}
       <nav className="bg-gradient-to-r from-red-600 via-red-700 to-red-800 p-6 shadow-lg">
         <div className="flex justify-between items-center">
-          {/* Logo (esquerda no desktop e direita no mobile) */}
+
+          {/* Logo */}
           <div className="flex-shrink-0 w-32">
             <img src={logo} alt="Logo Dexter" className="w-full h-auto" />
           </div>
@@ -38,6 +39,12 @@ function App() {
                 <Link to="/resurrection" className="text-lg hover:text-red-400 transition duration-300">Dexter: Resurrection</Link>
               </li>
             </ul>
+          </div>
+
+          {/* Opções Entrar ou Cadastrar-se */}
+          <div className="lg:flex flex-col items-center space-y-4 ml-auto hidden">
+            <Link to="/entrar" className="text-lg hover:text-red-400 transition duration-300">Entrar</Link>
+            <Link to="/cadastro" className="text-lg hover:text-red-400 transition duration-300 whitespace-nowrap">Cadastrar-se</Link>
           </div>
 
           {/* Ícone de "Menu" no mobile */}
@@ -62,6 +69,12 @@ function App() {
             <li>
               <Link to="/resurrection" className="text-lg hover:text-red-400 transition duration-300">Dexter: Resurrection</Link>
             </li>
+            <li>
+              <Link to="/entrar" className="text-lg hover:text-red-400 transition duration-300">Entrar</Link>
+            </li>
+            <li>
+              <Link to="/cadastro" className="text-lg hover:text-red-400 transition duration-300">Cadastrar-se</Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -82,10 +95,8 @@ function App() {
             criminosos que escaparam da justiça.
           </p>
           
-          {/* Texto acima do botão */}
           <h2 className="mt-8 text-2xl font-semibold text-red-500">Assista ao primeiro episódio grátis!</h2>
 
-          {/* Vídeo aparece acima do botão */}
           {isVideoOpen && (
             <div className="mt-6 relative w-full max-w-3xl mx-auto">
               <iframe
@@ -96,7 +107,6 @@ function App() {
                 allowFullScreen
                 className="rounded-lg shadow-lg"
               ></iframe>
-              {/* Botão de fechar */}
               <button
                 className="absolute -top-4 -right-4 bg-gray-800 text-white px-3 py-1 rounded-full text-sm hover:bg-gray-700 transition"
                 onClick={() => setIsVideoOpen(false)}
@@ -106,7 +116,6 @@ function App() {
             </div>
           )}
 
-          {/* Botão para assistir */}
           {!isVideoOpen && (
             <button
               className="mt-4 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition duration-300"
