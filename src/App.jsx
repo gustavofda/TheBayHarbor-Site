@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 import dexterImage from './assets/dexterImage.jpg';
-import logo from './assets/logodex.png'; // Importe o logo
+import logo from './assets/logodex.png';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
