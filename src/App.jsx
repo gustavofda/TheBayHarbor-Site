@@ -68,7 +68,7 @@ function App() {
 
         <div className="lg:w-2/3 lg:ml-16 text-center lg:text-left">
           <h1 className="text-5xl font-extrabold mb-6 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
-            Site Oficial da Franquia "Dexter"
+            DEXTER 
           </h1>
           <p className="text-lg lg:text-xl max-w-3xl mx-auto lg:mx-0 text-gray-300 leading-relaxed">
             Dexter Morgan (Michael C. Hall) trabalha para a polícia de Miami como especialista em padrões de dispersão de sangue,
