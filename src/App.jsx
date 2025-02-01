@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 import dexterImage from './assets/dexterImage.jpg';
+import logo from './assets/logodex.png'; // Importe o logo
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,11 @@ function App() {
       {/* Menu */}
       <nav className="bg-gradient-to-r from-red-600 via-red-700 to-red-800 p-6 shadow-lg">
         <div className="flex justify-between items-center">
+          {/* Logo (esquerda no desktop e direita no mobile) */}
+          <div className="flex-shrink-0 w-32">
+            <img src={logo} alt="Logo Dexter" className="w-full h-auto" />
+          </div>
+
           {/* Menu no desktop */}
           <div className="lg:flex justify-center items-center hidden w-full">
             <ul className="flex space-x-8">
@@ -71,7 +77,9 @@ function App() {
             DEXTER 
           </h1>
           <p className="text-lg lg:text-xl max-w-3xl mx-auto lg:mx-0 text-gray-300 leading-relaxed">
-          Dexter Morgan (Michael C. Hall) é adotado aos três anos de idade por Harry Morgan (James Remar) e Doris, depois de ter se tornado órfão. Após detectar sua tendência homicida, o pai de Dexter decide ensinar a ele um código no intuito de canalizar a raiva do filho para situações mais propícias à violência. Nesta nova lógica, Dexter deve matar apenas assassinos de pessoas inocentes com a condição de provar sua culpa. Ele inicia o desenvolvimento de diversas estratégias usando seu conhecimento e a experiência para realizar sua nova função.
+            Dexter Morgan (Michael C. Hall) trabalha para a polícia de Miami como especialista em padrões de dispersão de sangue,
+            mas esconde um segredo mortal: ele é um serial killer que segue um código criado por seu pai adotivo, matando apenas
+            criminosos que escaparam da justiça.
           </p>
           
           {/* Texto acima do botão */}
