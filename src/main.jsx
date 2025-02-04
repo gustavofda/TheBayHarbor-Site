@@ -8,6 +8,7 @@ import Originalsin from './components/Originalsin';
 import Resurrection from './components/Resurrection';
 import Cadastro from './components/Cadastro';
 import Entrar from './components/Entrar';
+import Noticia from './components/Noticia';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -22,6 +23,7 @@ root.render(
                 <Route path="/resurrection" element={<Resurrection />} />
                 <Route path="/entrar" element={<Entrar />} />
                 <Route path="/cadastro" element={<Cadastro />} />
+                <Route path="/noticia" element={<Noticia />} />
                 
             </Routes>
         </Router>
