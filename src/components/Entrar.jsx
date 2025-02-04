@@ -1,10 +1,9 @@
 function Entrar() {
     return (
-        <div>
-            <h1>Entre</h1>
-            <p>Faça login</p>
-        </div>
-    );
-}
+        <h1>
+            Entre com a sua conta 
+        </h1>
+    )
+};
 
 export default Entrar;
