@@ -59,7 +59,13 @@ function App() {
           <img src={dexterImage} alt="Dexter" className="w-full h-full object-cover rounded-2xl shadow-2xl" />
         </div>
         <div className="lg:w-2/3 lg:ml-16 text-center lg:text-left">
-          <h1 className="text-5xl font-extrabold mb-6 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">HELLO, DEXTER MORGAN</h1>
+        <h1 className="mb-6">
+      <img 
+        src={logo} 
+        alt="Logo Dexter" 
+        className="w-3/4 sm:w-48 lg:w-96 h-auto mx-auto" 
+      />
+    </h1>
           <p className="text-lg lg:text-xl max-w-3xl mx-auto lg:mx-0 text-gray-300 leading-relaxed">
             De dia, o pacato Dexter (Michael C. Hall) trabalha como analista forense de manchas de sangue para a polícia de Miami.
             À noite, ele é um assassino em série cujo alvo são outros assassinos.
