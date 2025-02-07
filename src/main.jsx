@@ -8,7 +8,8 @@ import Originalsin from './components/Originalsin';
 import Resurrection from './components/Resurrection';
 import Cadastro from './data/Cadastro';
 import Entrar from './data/Entrar';
-import Noticia from './components/Noticia';
+import Noticia from './data/Noticia';
+import ListaNoticia from './data/ListaNoticia';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -24,7 +25,7 @@ root.render(
                 <Route path="/entrar" element={<Entrar />} />
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/noticia" element={<Noticia />} />
-                
+                <Route path="/listanoticia" element={<ListaNoticia/>} />
             </Routes>
         </Router>
     </React.StrictMode>
