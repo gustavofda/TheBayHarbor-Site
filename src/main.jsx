@@ -6,8 +6,8 @@ import Dexter2006 from './components/Dexter2006';
 import Newblood from './components/Newblood';
 import Originalsin from './components/Originalsin';
 import Resurrection from './components/Resurrection';
-import Cadastro from './components/Cadastro';
-import Entrar from './components/Entrar';
+import Cadastro from './data/Cadastro';
+import Entrar from './data/Entrar';
 import Noticia from './components/Noticia';
 
 const root = createRoot(document.getElementById('root'));
