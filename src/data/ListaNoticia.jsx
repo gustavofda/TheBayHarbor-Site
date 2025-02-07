@@ -12,7 +12,7 @@ const noticias = [
 
 function ListaNoticia() {
   return (
-    <section className="bg-gray-800 text-white p-8 lg:p-16">
+    <section className="bg-gray-800 text-white p-8 lg:p-16 ">
       <h2 className="text-3xl font-bold text-red-500 mb-6">Últimas Notícias</h2>
       {noticias.map((noticia, index) => (
         <Noticia 
