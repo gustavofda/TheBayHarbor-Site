@@ -10,6 +10,7 @@ import Cadastro from './data/Cadastro';
 import Entrar from './data/Entrar';
 import Noticia from './data/Noticia';
 import ListaNoticia from './data/ListaNoticia';
+import Noticia1 from './data/Dexter 2006/Noticias1';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -26,6 +27,7 @@ root.render(
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/noticia" element={<Noticia />} />
                 <Route path="/listanoticia" element={<ListaNoticia/>} />
+                <Route path="/noticia1" element={<Noticia1/>} />
             </Routes>
         </Router>
     </React.StrictMode>

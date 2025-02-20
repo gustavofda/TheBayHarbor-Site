@@ -7,6 +7,7 @@ import jennifer from "../assets/jennifer.jpg";
 import James from "../assets/James Remar.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import Noticias1 from "../data/Dexter 2006/Noticias1"; 
 
 const Dexter2006 = () => {
   return (
@@ -16,7 +17,6 @@ const Dexter2006 = () => {
           <div className="flex-shrink-0 w-32">
             <img src={logo} alt="Logotipo Dexter" className="w-full h-auto" />
           </div>
-          {/* Menu Desktop */}
           <div className="lg:flex justify-center items-center hidden w-full">
             <ul className="flex space-x-8">
               <li>
@@ -58,28 +58,15 @@ const Dexter2006 = () => {
 
       {/* Conteúdo Principal */}
       <div className="p-8 lg:p-16">
-        {/* Notícias */}
-        <section className="mb-16">
-          <h1 className="text-4xl font-bold mb-8 text-center">Notícias sobre Dexter (2006)</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-semibold mb-4">Título da Notícia 1</h2>
-              <p className="text-gray-300">Detalhes da notícia sobre a série Dexter (2006).</p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-semibold mb-4">Título da Notícia 2</h2>
-              <p className="text-gray-300">Mais informações interessantes sobre a série.</p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-semibold mb-4">Título da Notícia 3</h2>
-              <p className="text-gray-300">Curiosidades imperdíveis sobre Dexter.</p>
-            </div>
-          </div>
+        {/* Últimas Notícias */}
+        <section className="bg-gray-800 p-6 rounded-lg shadow-md mb-12 max-w-full mx-auto">
+          {/* Exibindo as notícias importadas */}
+          <Noticias1 />
         </section>
 
         {/* Elenco */}
-        <section>
-          <h1 className="text-4xl font-bold mb-8 text-center">Elenco Principal</h1>
+        <section className="mt-16">
+          <h1 className="text-4xl font-bold mb-12 text-center">Elenco Principal</h1>
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={20}
@@ -93,32 +80,44 @@ const Dexter2006 = () => {
           >
             <SwiperSlide>
               <div className="flex flex-col items-center group">
-                <img
-                  src={michael}
-                  alt="Michael C. Hall"
-                  className="w-56 h-56 object-cover mb-4 rounded-full shadow-xl transition-transform duration-300 ease-in-out group-hover:scale-105"
-                />
-                <p className="text-xl font-semibold text-center mt-2 group-hover:text-red-400 transition-colors duration-300">Michael C. Hall</p>
+                <div className="w-56 h-56 rounded-full overflow-hidden shadow-xl transition-transform duration-300 ease-in-out group-hover:scale-105 bg-gray-800 flex items-center justify-center">
+                  <img
+                    src={michael}
+                    alt="Michael C. Hall"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-xl font-semibold text-center mt-4 group-hover:text-red-400 transition-colors duration-300">
+                  Michael C. Hall
+                </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex flex-col items-center group">
-                <img
-                  src={jennifer}
-                  alt="Jennifer Carpenter"
-                  className="w-56 h-56 object-cover mb-4 rounded-full shadow-xl transition-transform duration-300 ease-in-out group-hover:scale-105"
-                />
-                <p className="text-xl font-semibold text-center mt-2 group-hover:text-red-400 transition-colors duration-300">Jennifer Carpenter</p>
+                <div className="w-56 h-56 rounded-full overflow-hidden shadow-xl transition-transform duration-300 ease-in-out group-hover:scale-105 bg-gray-800 flex items-center justify-center">
+                  <img
+                    src={jennifer}
+                    alt="Jennifer Carpenter"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-xl font-semibold text-center mt-4 group-hover:text-red-400 transition-colors duration-300">
+                  Jennifer Carpenter
+                </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex flex-col items-center group">
-                <img
-                  src={James}
-                  alt="James Remar"
-                  className="w-56 h-56 object-cover mb-4 rounded-full shadow-xl transition-transform duration-300 ease-in-out group-hover:scale-105"
-                />
-                <p className="text-xl font-semibold text-center mt-2 group-hover:text-red-400 transition-colors duration-300">James Remar</p>
+                <div className="w-56 h-56 rounded-full overflow-hidden shadow-xl transition-transform duration-300 ease-in-out group-hover:scale-105 bg-gray-800 flex items-center justify-center">
+                  <img
+                    src={James}
+                    alt="James Remar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-xl font-semibold text-center mt-4 group-hover:text-red-400 transition-colors duration-300">
+                  James Remar
+                </p>
               </div>
             </SwiperSlide>
           </Swiper>
