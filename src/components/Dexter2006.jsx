@@ -7,11 +7,12 @@ import jennifer from "../assets/jennifer.jpg";
 import James from "../assets/James Remar.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import Noticias1 from "../data/Dexter 2006/Noticias1"; 
+import Noticias1 from "../data/Dexter 2006/Noticias1";
 
 const Dexter2006 = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen flex flex-col">
+      {/* Navbar */}
       <nav className="bg-gradient-to-r from-red-600 via-red-700 to-red-800 p-6 shadow-lg">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 w-32">
@@ -57,16 +58,18 @@ const Dexter2006 = () => {
       </nav>
 
       {/* Conteúdo Principal */}
-      <div className="p-8 lg:p-16">
+      <div className="p-8 lg:p-16 flex flex-col items-center">
         {/* Últimas Notícias */}
-        <section className="bg-gray-800 p-6 rounded-lg shadow-md mb-12 max-w-full mx-auto">
+        <section className="bg-gray-800 text-white p-4 rounded-lg shadow-md w-full max-w-3xl mx-auto mb-8">
           {/* Exibindo as notícias importadas */}
           <Noticias1 />
         </section>
 
         {/* Elenco */}
-        <section className="mt-16">
-          <h1 className="text-4xl font-bold mb-12 text-center">Elenco Principal</h1>
+        <section className="mt-16 w-full">
+          <h1 className="text-4xl font-bold mb-12 text-center">
+            Elenco Principal
+          </h1>
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={20}
