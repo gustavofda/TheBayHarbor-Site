@@ -1,5 +1,5 @@
 import React from 'react';
-import Noticia from '../Noticia'; // Certifique-se de que está importando corretamente
+import Noticia from '../Noticia';
 
 const noticias1 = [
   {
@@ -13,7 +13,6 @@ const noticias1 = [
 function ListaNoticia1() {
   return (
     <section className="bg-gray-800 text-white p-8 rounded-lg shadow-md w-full max-w-4xl mx-auto">
-      {/* Título da seção */}
       <h2 className="text-3xl font-bold text-red-500 mb-6 text-center">
         Últimas Notícias
       </h2>
