@@ -36,10 +36,10 @@ function App() {
             <Link to="/cadastro" className="text-lg hover:text-red-400 transition duration-300 whitespace-nowrap">Cadastrar-se</Link>
           </div>
 
-          <div className="lg:hidden flex items-center space-x-2 mt-2" onClick={toggleMenu}>
+          <button type="button" className="lg:hidden flex items-center space-x-2 mt-2" onClick={toggleMenu} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') toggleMenu(); }}>
             <span className="text-4xl">☰</span>
             <span className="font-semibold">Menu</span>
-          </div>
+          </button>
         </div>
         {/* Menu Mobile */}
         <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} mt-4 pl-4`}>
@@ -59,13 +59,13 @@ function App() {
           <img src={dexterImage} alt="Dexter" className="w-full h-full object-cover rounded-2xl shadow-2xl" />
         </div>
         <div className="lg:w-2/3 lg:ml-16 text-center lg:text-left">
-        <h1 className="mb-6">
-      <img 
-        src={logo} 
-        alt="Logo Dexter" 
-        className="w-3/4 sm:w-48 lg:w-96 h-auto mx-auto" 
-      />
-    </h1>
+          <h1 className="mb-6">
+            <img 
+              src={logo} 
+              alt="Logo Dexter" 
+              className="w-3/4 sm:w-48 lg:w-96 h-auto mx-auto" 
+            />
+          </h1>
           <p className="text-lg lg:text-xl max-w-3xl mx-auto lg:mx-0 text-gray-300 leading-relaxed">
             De dia, o pacato Dexter (Michael C. Hall) trabalha como analista forense de manchas de sangue para a polícia de Miami.
             À noite, ele é um assassino em série cujo alvo são outros assassinos.
@@ -73,17 +73,17 @@ function App() {
           <h2 className="mt-8 text-2xl font-semibold text-red-500">Assista ao primeiro episódio grátis!</h2>
           {isVideoOpen && (
             <div className="mt-6 relative w-full max-w-3xl mx-auto">
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/j5GxlFxdcbQ?si=AL6mGPPYVnMFMD91" title="Dexter Episódio 1" allowFullScreen className="rounded-lg shadow-lg"></iframe>
-              <button className="absolute -top-4 -right-4 bg-gray-800 text-white px-3 py-1 rounded-full text-sm hover:bg-gray-700 transition" onClick={() => setIsVideoOpen(false)}>✖</button>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/j5GxlFxdcbQ?si=AL6mGPPYVnMFMD91" title="Dexter Episódio 1" allowFullScreen className="rounded-lg shadow-lg" />
+              <button type="button" className="absolute -top-4 -right-4 bg-gray-800 text-white px-3 py-1 rounded-full text-sm hover:bg-gray-700 transition" onClick={() => setIsVideoOpen(false)}>✖</button>
             </div>
           )}
           {!isVideoOpen && (
-            <button className="mt-4 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition duration-300" onClick={() => setIsVideoOpen(true)}>Assistir Episódio 1</button>
+            <button type="button" className="mt-4 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition duration-300" onClick={() => setIsVideoOpen(true)}>Assistir Episódio 1</button>
           )}
         </div>
       </div>
       {/* Separação */}
-      <div className="w-full h-2 bg-red-700 opacity-50"></div>
+      <div className="w-full h-2 bg-red-700 opacity-50" />
       {/* Seção de Notícias */}
       <ListaNoticia />
     </div>
